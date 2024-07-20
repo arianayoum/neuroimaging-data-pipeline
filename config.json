@@ -1,0 +1,59 @@
+{
+    "descriptions": [
+        {
+            "dataType": "anat",
+            "modalityLabel": "T1w",
+            "criteria": {
+                "SeriesDescription": "t1_mprage_tra_p2_iso"
+            }
+        },
+        {
+            "dataType": "func",
+            "modalityLabel": "bold",
+            "customLabels": "task-MID",
+            "TaskName": "MID",
+            "criteria": {
+                "SidecarFilename": "*task*"
+            }
+	      },
+        {
+            "dataType": "func",
+            "modalityLabel": "bold",
+            "customLabels": "task-rest",
+            "criteria": {
+                "SidecarFilename": "*rest*"
+            }
+        },
+        {
+            "dataType": "dwi",
+            "modalityLabel": "dwi",
+            "customLabels": "AP",
+            "criteria": {
+                "SeriesDescription": "*64dir"
+            }
+        },
+        {
+              "dataType": "dwi",
+              "modalityLabel": "dwi",
+              "customLabels": "trace",
+              "criteria": {
+                  "SeriesDescription": "*TRACEW"
+            }
+        },
+        {
+              "dataType": "dwi",
+              "modalityLabel": "dwi",
+              "customLabels": "PA",
+              "criteria": {
+                  "SeriesDescription": "ep2d_diff_p2s2_PA"
+            }
+        },
+        {
+            "dataType": "anat",
+            "modalityLabel": "T2w",
+            "criteria": {
+                "SeriesDescription": "t2_tse_cor_384_3mm"
+            }
+        }
+    ]
+}
